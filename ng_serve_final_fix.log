@@ -1,0 +1,19 @@
+
+> frontend-course@0.0.0 start
+> ng serve
+
+Component HMR has been enabled, see https://angular.dev/hmr for more info.
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  93.02 kB |
+main.js             | main          |  81.92 kB |
+styles.css          | styles        |  96 bytes |
+
+                    | Initial total | 175.04 kB
+
+Application bundle generation complete. [4.995 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
