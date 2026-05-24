@@ -1,0 +1,11 @@
+<app-header />
+<div class="main-layout">
+  <app-sidebar [topics]="topics" (topicSelected)="onTopicSelected($event)" [selectedTopicId]="selectedTopic()?.id" />
+  <main class="content-area">
+    @if (selectedTopic(); as topic) {
+      <app-topic-content [topic]="topic" />
+    } @else {
+      <app-home />
+    }
+  </main>
+</div>

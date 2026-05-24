@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #3b82f6;
+  --primary-light: #eff6ff;
+  --surface-ground: #f8fafc;
+  --surface-card: #ffffff;
+  --surface-border: #e2e8f0;
+  --surface-hover: #f1f5f9;
+  --text-color: #1e293b;
+  --text-secondary: #64748b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--surface-ground);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  color: #0f172a;
+}
+
+.main-layout {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+.content-area {
+  flex: 1;
+  overflow-y: auto;
+  background: white;
+}

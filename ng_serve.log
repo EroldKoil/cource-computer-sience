@@ -1,0 +1,133 @@
+
+> frontend-course@0.0.0 start
+> ng serve
+
+❯ Building...
+✔ Building...
+Initial chunk files | Names         | Raw size
+main.js             | main          | 63.55 kB |
+styles.css          | styles        | 96 bytes |
+
+                    | Initial total | 63.65 kB
+
+Application bundle generation complete. [4.436 seconds] - 2026-05-24T16:53:21.087Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 67.45 kB |
+
+Application bundle generation complete. [0.299 seconds] - 2026-05-24T16:59:25.780Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 68.82 kB |
+
+Application bundle generation complete. [0.257 seconds] - 2026-05-24T16:59:48.235Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 74.87 kB |
+
+Application bundle generation complete. [0.324 seconds] - 2026-05-24T17:00:09.127Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.20 kB |
+
+Application bundle generation complete. [0.379 seconds] - 2026-05-24T17:03:17.656Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         | Raw size
+main.js             | main          | 75.20 kB |
+styles.css          | styles        | 96 bytes |
+
+                    | Initial total | 75.29 kB
+
+Application bundle generation complete. [0.130 seconds] - 2026-05-24T17:03:28.588Z
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.60 kB |
+
+Application bundle generation complete. [0.218 seconds] - 2026-05-24T17:05:01.887Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.60 kB |
+
+Application bundle generation complete. [0.230 seconds] - 2026-05-24T17:05:10.039Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.88 kB |
+
+Application bundle generation complete. [0.158 seconds] - 2026-05-24T17:06:48.266Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.77 kB |
+
+Application bundle generation complete. [0.528 seconds] - 2026-05-24T17:09:24.420Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 78.00 kB |
+
+Application bundle generation complete. [0.613 seconds] - 2026-05-24T17:10:35.462Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 82.80 kB |
+
+Application bundle generation complete. [0.459 seconds] - 2026-05-24T17:11:02.339Z
+
+Page reload sent to client(s).
+fatal error: all goroutines are asleep - deadlock!
+Killed
+
+goroutine 1 [chan receive]:
+github.com/evanw/esbuild/internal/helpers.(*ThreadSafeWaitGroup).Wait(...)
+	github.com/evanw/esbuild/internal/helpers/waitgroup.go:36
+main.runService.func2()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:114 +0x53
+main.runService(0x1)
+	github.com/evanw/esbuild/cmd/esbuild/service.go:160 +0x4c3
+main.main()
+	github.com/evanw/esbuild/cmd/esbuild/main.go:252 +0xb75
+
+goroutine 7 [chan receive]:
+main.runService.func1()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:98 +0x45
+created by main.runService in goroutine 1
+	github.com/evanw/esbuild/cmd/esbuild/service.go:97 +0x1ce
+
+goroutine 8 [chan receive]:
+main.(*serviceType).sendRequest(0xc00015aed0, {0x9f48c0, 0xc00087dad0})
+	github.com/evanw/esbuild/cmd/esbuild/service.go:192 +0x12b
+main.runService.func3()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:125 +0x3e
+created by main.runService in goroutine 1
+	github.com/evanw/esbuild/cmd/esbuild/service.go:122 +0x2d0
